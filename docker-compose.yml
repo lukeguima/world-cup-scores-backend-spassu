@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: world-cup-scores-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: world_cup_scores
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - world_cup_scores_data:/var/lib/postgresql/data
+
+volumes:
+  world_cup_scores_data:
