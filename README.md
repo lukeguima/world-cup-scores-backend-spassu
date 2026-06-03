@@ -1,4 +1,4 @@
-# World Cup Scores
+# World Cup Scores - Backend
 
 Backend para gerenciamento de partidas e placares da Copa do Mundo.
 
